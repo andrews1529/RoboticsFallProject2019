@@ -1,0 +1,32 @@
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\le\Team Dave.exe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\be\Team Dave.exe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\le\Team Dave.pdb
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\be\Team Dave.pdb
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\Team Dave.exe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\Team Dave.pdb
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\le\Team Dave.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\le\Team Dave.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\be\Team Dave.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\be\Team Dave.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\LE\CTRE.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\LE\ctre_netmf_native.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\BE\CTRE.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\BE\ctre_netmf_native.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\LE\CTRE.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\LE\ctre_netmf_native.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\BE\CTRE.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\BE\ctre_netmf_native.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\CTRE.dll
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\ctre_netmf_native.dll
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\CTRE.pdb
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\bin\Debug\ctre_netmf_native.pdb
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\Team Dave.csprojAssemblyReference.cache
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\Team Dave.csproj.CoreCompileInputs.cache
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\be\Team Dave.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\be\Team Dave.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\le\Team Dave.pe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\le\Team Dave.pdbx
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\Team Dave.csproj.CopyComplete
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\Team Dave.exe
+C:\Users\Wasay\Documents\Code\CTRE_HERO\Team Dave\Team Dave\obj\Debug\Team Dave.pdb
