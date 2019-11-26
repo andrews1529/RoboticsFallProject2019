@@ -15,10 +15,14 @@ namespace Team_Dave
             /* create a talon, the Talon Device ID in HERO LifeBoat is zero */
             CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(1);
             CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon2 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(2);
+            CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon3 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(3);
 
+            
             float speed;
             float turn;
             float avg;
+            bool rampDown = false;
+            bool rampUp = false;
 
             /* loop forever */
             while (true)
@@ -31,11 +35,15 @@ namespace Team_Dave
                     speed = myGamepad.GetAxis(1);
                     turn = myGamepad.GetAxis(0);
                     avg = speed / 2 + turn / 2;
+                    rampDown = myGamepad.GetButton(1);
+                    rampUp = myGamepad.GetButton(2);
                     /* print the axis value */
                     //Turning is overriding the speed 
                     Debug.Print("axis:" + myGamepad.GetAxis(0) + ", " + myGamepad.GetAxis(1) + ", " + myGamepad.GetAxis(2) + ", " + myGamepad.GetAxis(5));
                     Debug.Print("speed:" + speed);
-                    Debug.Print("turn:" + turn);
+                    Debug.Print("turn:" + turn);    
+                    Debug.Print("Button 1(DOWN): " + rampDown);
+                    Debug.Print("Button 2(UP): " + rampUp);
 
                     /* pass axis value to talon */
                    // myTalon.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, speed);
@@ -47,7 +55,20 @@ namespace Team_Dave
                     
                     myTalon.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, avg * -1);
                     myTalon2.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, avg);
-
+                    if (rampDown)
+                    {
+                        myTalon3.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, -1.0);
+                    }
+                    else if (rampUp)
+					{
+						myTalon3.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, 1.0);
+					}
+					else
+					{
+						myTalon3.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, 0);
+					}
+					
+                    //once button is pressed move motor specific amount of times so that the ramp rests at a 90 degree angle
 
                     /* allow motor control */
                     CTRE.Phoenix.Watchdog.Feed();
