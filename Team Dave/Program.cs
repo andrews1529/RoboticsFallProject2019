@@ -3,6 +3,7 @@ using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
+
 namespace Team_Dave
 {
     public class Program
@@ -15,7 +16,7 @@ namespace Team_Dave
             /* create a talon, the Talon Device ID in HERO LifeBoat is zero */
             CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(1);
             CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon2 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(2);
-            CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon3 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(3);
+            CTRE.Phoenix.MotorControl.CAN.TalonSRX myTalon3 = new CTRE.Phoenix.MotorControl.CAN.TalonSRX(25);
 
             
             float speed;
@@ -23,6 +24,32 @@ namespace Team_Dave
             float avg;
             bool rampDown = false;
             bool rampUp = false;
+            int c = 0;
+
+            var startTime = DateTime.UtcNow;
+
+            while(DateTime.UtcNow - startTime < TimeSpan.FromTicks(50000000))
+            {
+                myTalon3.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, 1);
+                Debug.Print("Test: " + c++);
+                /* allow motor control */
+                CTRE.Phoenix.Watchdog.Feed();
+            }
+
+            startTime = DateTime.UtcNow;
+
+            while (DateTime.UtcNow - startTime < TimeSpan.FromTicks(50000000))
+            {
+                myTalon3.Set(CTRE.Phoenix.MotorControl.ControlMode.PercentOutput, -1);
+                Debug.Print("Test: " + c++);
+                CTRE.Phoenix.Watchdog.Feed();
+            }
+
+
+            /* wait a bit */
+            System.Threading.Thread.Sleep(50);
+        
+
 
             /* loop forever */
             while (true)
